@@ -1,0 +1,25 @@
+h1 {
+    font-size: 80px;
+    color: #242124;
+}
+
+h3 {
+    color: #c08081;
+}
+
+p {
+    font-size: 15px;
+    color: #242124;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    font-family: 'Consolas';
+    background-color: #FFF7EE;
+}
+
+
+/* raisin black, beau blue, linen, old rose, unbleached silk */
