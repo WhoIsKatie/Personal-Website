@@ -1,0 +1,417 @@
+:root {
+    font-size: 15px;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:rgba(107, 112, 92, 0.3);
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    font-family: 'Cardo', serif;
+    background-color: #FFF7EE; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    font-family: cardo;
+    font-size: 4.8rem;
+    font-weight: normal;
+    color: #3f4238;
+    margin-bottom: 2.75rem;
+}
+
+h2 {
+    color:#6b705c;
+    font-family: cardo;
+    font-weight: normal;
+    font-size: 3.5vw;
+}
+
+h3 {
+    color: #6b705c;
+    font-weight: normal;
+    font-size: 1.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4  {
+    font-weight: normal;
+    color: #6b705c;
+    font-size: max(10px, 1.25vw);
+}
+
+h5  {
+    font-weight: normal;
+    color: #3f4238;
+    font-size: 1.1vw;
+    margin-top: 1rem;
+}
+
+.intro h5 {
+    color: #6b705c;
+}
+
+p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #242124;
+}
+
+a {
+    font-family: cardo;
+}
+
+#project-items div {
+    background-color:rgba(107, 112, 92, 0.1);
+    width:60vw;
+    flex-basis: 125px;
+    flex-shrink: 1;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+/* --------------------------NAVIGATION BAR---------------------------- */
+#nav-bar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.meow a {
+    color: #b98b73;
+    padding: 0.7em 0.8em;
+    margin: 0px 8em;
+    text-decoration: none;
+    font-size: 1.1em;
+    letter-spacing: 0.3em; 
+}
+
+/* Change the color of links on hover */
+.meow a:nth-of-type(1):hover {
+    background-image: url('../content/hover-button.png');
+    background-size:cover;
+}
+
+.pr:hover {
+    background-image: url('../content/hover-button-2.png');
+    background-size: cover;
+}
+
+.co:hover {
+    background-image: url('../content/hover-button-3.png');
+    background-size: cover;
+}
+
+/* Add a color to the active/current link */
+.meow a.active {
+    background-image: url('../content/hover-button.png');
+    background-size: cover;
+}
+
+/* --------------------------BUTTONS---------------------------- */
+#button {
+    padding: 0;
+    border: none;
+    background-color: transparent ;
+    width:0.78vw;
+    min-width: 10px;
+    position:absolute;
+    cursor: pointer;
+}
+
+.close-button {
+    background-image: url('../content/close_icon.png');
+    background-size: contain;
+    height:0.8vw;
+    min-height: 10px;
+    left:25.5vw;
+    top:-1.1vw;
+}
+
+.resize-button {
+    background-image: url('../content/resizedown_icon.png');
+    background-size: contain;
+    height:0.7vw;
+    min-height: 12px;
+    left:24vw;
+    top:-1.1vw;
+}
+
+.min-button {
+    background-color:#fff1e8;
+    height:10vw;
+    left:22.5vw;
+    top:-1.1vw;
+}
+
+
+/* --------------------------BOXES---------------------------- */
+.intro-box {
+    background-color:rgba(107, 112, 92, 0.1);
+    width:26.8vw; 
+    height:16vw; 
+    position:absolute; 
+    margin:auto;
+    min-width: 400px;
+    min-height: 238.8px;
+    border-top: max(20px, 1.5vw) solid rgba(107, 112, 92, 0.15);
+    font-size: 1rem;
+}
+
+.intro-box-1 {
+    top:-0.3vw;
+    left:0.85vw; 
+    z-index:1;
+}
+
+.intro-box-2 {
+    top:1.2vw;
+    left:2.35vw; 
+    z-index:2;
+}
+
+.about-box {
+    background-color:rgba(107, 112, 92, 0.1);
+    width:35vw;
+    height:18vw; 
+    position:absolute; 
+    z-index:1;
+    min-width: 150px;
+    min-height: 77.14px;
+}
+
+.about-box-1 {
+    top:0vw;
+    left:32vw; 
+    z-index:1;
+}
+
+.about-box-2 {
+    top:1.5vw;
+    left:33.5vw; 
+    z-index:2;
+}
+
+#project-items {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* --------------------------OTHER CLASSES---------------------------- */
+.intro-container {
+    max-width: 30vw;
+    min-height: 500px;
+    position: relative; 
+    align-items: center;
+    flex-grow: 1;
+    margin: auto;
+    margin-top: 12rem;
+}
+
+.container {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 2rem;
+    position: relative; 
+    align-items: center;
+} 
+
+.branch-birb {
+    margin-left: -0.3vw;
+    margin-top: 55vh;
+}
+
+.branch-birb img {
+    max-width: 14rem;
+    opacity: 60%;
+}
+
+.flying-birb {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.flying-birb img {
+    max-width: 16rem;
+    opacity: 60%;
+}
+
+.greeting {
+    margin-top: 0;
+}
+
+.project-text {
+    padding-left: 1.3vw;
+    padding-top: 1vw;
+}
+
+.project-text p {
+    color: #6b705c;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+}
+
+.tag {
+    font-family: Consolas, monaco, monospace; 
+    font-size: 12px;
+    margin-top: 0vw;
+    padding-right: 1.2vw;
+    text-align: end;
+}
+
+.intro {
+    line-height: 1vw;
+    left: 2.9vw;
+    top: 1vw;
+    position: absolute;
+    width: 19rem;
+}
+
+.title {
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.profile {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    position: absolute;
+}
+
+.me img {
+    position:relative;
+    margin-left: 29vw;
+    margin-top: -4rem;
+    max-width: 8%;
+    border-radius: 50%;
+    z-index:3;
+}
+
+/* -------------------------- OTHER ---------------------------- */
+#intro {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+#contact {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .branch-birb {
+        display: none;
+    }
+    .flying-birb {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro-container {
+        min-width: 300px;
+    }
+
+    .intro-box-1 {
+        top:-8px;
+        left:5px; 
+        z-index:1;
+    }
+    
+    .intro-box-2 {
+        top:12px;
+        left:24px; 
+        z-index:2;
+    }
+
+    
+
+}
+
+
+
+/* --------------------------COLOUR PALETTE---------------------------- */
+/* Antique Brass, Desert Sand, Champagne Pink, linen, Bone, Ash Gray, Artichoke, Ebony, Black Olive, Charleston Green */
+
+.abrass1 {
+    color: #b98b73;
+}
+
+.abrass2 {
+    color: #cb997e;
+}
+
+.dsand {
+    color: #ddbea9;
+}
+
+.cpink {
+    color: #ffe8d6;
+}
+
+.linen {
+    color: #fff1e8;
+}
+
+.bone {
+    color: #d4c7b0;
+}
+
+.agray {
+    color: #b7b7a4;
+}
+
+.artichoke {
+    color: #a5a58d;
+}
+
+.ebony {
+    color: #6b705c;
+}
+
+.bolive {
+    color: #3f4238
+}
+
+.cgreen {
+    color: #242621;
+}

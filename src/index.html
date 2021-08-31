@@ -1,99 +1,129 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Katie Liu</title>
-        <!-- Boostrap --> 
-        <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css"/>
-        <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
-        <!-- Cardo font --> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
-        <!-- import css & js --> 
-        <link href='style.css' rel='stylesheet'>
-        <script defer src="src/main.js" charset="utf-8"></script>
-    </head>
-    <body>
-        <div id='main' class="topnav justify-content-end">
-            <a class="active" href="#main">main</a>
-            <a href="#about">about</a> 
-            <a href="#projects">projects</a>
-            <a href="#contact">contact</a>
-            <a href="#resume">resume</a>
-         </div>
-        <!-- <header class='intro'>
-            <img src="header_img.png">
-            <div class='container'>
-                <div class='row align-items-center justify-content-center'>
-                    <div class="col-sm-4 offset-sm-1 col-xl-offset-10">
-                        <div class='header'>
-                            <h3>Hello! I'm</h3> 
-                            <h1> Katie
-                                <span class="artichoke"> Liu </span> 
-                           </h1>
-                        </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katie Liu</title>
+    <!-- Boostrap -->
+    <!-- <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css"/>
+        <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script> -->
+    <!-- Cardo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap" rel="stylesheet">
+    <!-- import css & js-->
+    <link rel='stylesheet' href='css/style.css'>
+    <script defer src="src/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <nav id="nav-bar" class='meow'>
+        <a class='ab' href="#about">about</a>
+        <a class="pr" href="#projects">projects</a>
+        <a class="co" href="#contact">contact</a>
+    </nav>
+
+    <main>
+        <header id='intro'>
+            <div class='branch-birb'><img src="content/branch_birb.png"></div>
+            <div class='intro-container'>
+                <div class='intro-box intro-box-1'>
+                    <button id='button' class='close-button'></button>
+                    <button id='button' class='resize-button'></button>
+                    <button id='button' class='min-button'></button>
+                </div>
+                <div class='intro-box intro-box-2'>
+                    <button id='button' class='close-button'></button>
+                    <button id='button' class='resize-button'></button>
+                    <button id='button' class='min-button'></button>
+                    <div class='intro'>
+                        <h5>Hello, I'm</h5>
+                        <h1> Katie
+                            <span class="artichoke"> Liu </span>
+                        </h1>
+                        <h5 class='greeting' style='text-align: center;'>It's so nice to meet you!</h5>
                     </div>
                 </div>
             </div>
-        </header> -->
-        <header class='intro'>
-            <img src="header_img.png">
-                <div class='row align-items-center justify-content-center'>
-                        <div class='header'>
-                            <h3>Hello! I'm</h3> 
-                            <h1> Katie
-                                <span class="artichoke"> Liu </span> 
-                           </h1>
-                        </div>
-                </div>
+            <div class='flying-birb'><img src="content/flying_birb.png"></div>
         </header>
 
         <section id='about'>
+            <div class='title'>
+                <h2>About me</h2>
+            </div>
+            <br><br>
             <div class="container">
-                <div class='about-title'>
-                    <div class='center'>
-                        <h2>About me</h2>
-                    </div>
+                <div class="me">
+                    <img src="content/profile.jpg">
                 </div>
-                
-                <div class='row justify-content-start'>
-                    <div class="col-md-5">
-                        <div class="me">
-                            <img src="profile.png">
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <h5 class='profile'>
-                            I'm Katie, an undergraduate at UOttawa studying Computer Science. Currently, I'm still exploring my interests in tech.
-                            Outside of class, I can be found reading up on the latest Webtoon updates, playing Stardew Valley, and watercolour painting.
-                        </h5>
-                    </div>
+
+                <div class='about-box about-box-1'></div>
+                <div class='about-box about-box-2'>
+                    <h5 class='profile'>
+                        I'm Katie, an undergraduate at UOttawa studying Computer Science. Aside from learning
+                        essential algorithms and data structures, I'm currently exploring my areas of interests.
+                        <br><br>
+                        When I'm not preoccupied with studying, you can find me watercolouring my existential pain away
+                        &#128512;
+                    </h5>
+                </div>
+
+            </div>
+        </section>
+
+        <section id='projects'>
+            <div class='title'>
+                <div style='margin-right: 60vw'>
+                    <h2>My Projects</h2>
+                </div>
+            </div>
+
+            <div id='project-items'>
+                <div class='project-text'>
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
+                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
+                        Adipisci, natus labore!
+                    </p>
+                    <p class='tag'>Java My Ass</p>
+                </div>
+                <div class='project-text'>
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
+                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
+                        Adipisci, natus labore!
+                    </p>
+                    <p class='tag'>Java My Ass</p>
+                </div>
+                <div class='project-text'>
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
+                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
+                        Adipisci, natus labore!
+                    </p>
+                    <p class='tag'>Java My Ass</p>
+
                 </div>
             </div>
         </section>
 
-        <section id='projects' class="">
-            <div class="container">
-                <div class='about-title'>
-                    <div class='center'>
-                        <h2>Projects</h2>
-                    </div>
-                </div>
-            
-            
-        </section>
-        
-        <div id='contact' class="">
-            
-            
-            <!-- <p class='center'>Designed by Katie Liu</p>  -->
+    </main>
+
+    <footer id='contact'>
+        <div class="">
+
+
+            <p class='center'> Designed by Katie Liu &hearts; </p>
         </div>
-        
+
         <!-- PDF STAND IN  -->
+    </footer>
 
-    </body>
+
+
+</body>
+
 </html>
-
