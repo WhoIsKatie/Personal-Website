@@ -1,6 +1,18 @@
 :root {
     font-size: 15px;
-
+    --navbar-height: 70px;
+    --antique-brass: #b98b73;
+    --light-antique-brass: #cb997e;
+    --desert-sand: #ddbea9;
+    --champagne-pink: #ffe8d6;
+    --linen: #fff1e8;
+    --baby-powder: #fffcf9;
+    --bone: #d4c7b0;
+    --ash-gray: #b7b7a4;
+    --artichoke: #a5a58d;
+    --ebony: #6b705c;
+    --black-olive: #3f4238;
+    --charleston-green: #242621;
 }
 
 body::-webkit-scrollbar {
@@ -18,7 +30,7 @@ html, body {
     width: 100%;
     padding: 0;
     font-family: 'Cardo', serif;
-    background-color: #FFFCF9; 
+    background-color: var(--baby-powder);
 }
 
 *, *:before, *:after {
@@ -26,9 +38,17 @@ html, body {
 }
 
 nav {
+    width: 100%;
+    height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+    transition: top 0.3s;
+}
+
+ul, li {
+    display: inline;
 }
 
 h1 {
@@ -97,8 +117,23 @@ footer {
 
 /* --------------------------NAVIGATION BAR---------------------------- */
 #nav-bar {
-    margin-top: 10px;
+    height: var(--navbar-height);
+    align-items: center;
     text-align: center;
+    background-color: rgba(255, 252, 249, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.background {
+    filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home img{
+    margin-left: 2rem; 
 }
 
 .meow a {
@@ -111,25 +146,13 @@ footer {
 }
 
 /* Change the color of links on hover */
-.meow a:nth-of-type(1):hover {
-    background-image: url('../content/hover-button.png');
-    background-size:cover;
-}
-
-.pr:hover {
-    background-image: url('../content/hover-button-2.png');
-    background-size: cover;
-}
-
-.co:hover {
-    background-image: url('../content/hover-button-3.png');
-    background-size: cover;
+.meow a:hover {
+    color:var(--desert-sand);
 }
 
 /* Add a color to the active/current link */
 .meow a.active {
-    background-image: url('../content/hover-button.png');
-    background-size: cover;
+    color:var(--desert-sand);
 }
 
 /* --------------------------BUTTONS---------------------------- */
@@ -201,7 +224,6 @@ footer {
     width:35vw;
     height:18vw; 
     position:absolute; 
-    z-index:1;
     min-width: 150px;
     min-height: 77.14px;
 }
@@ -209,13 +231,13 @@ footer {
 .about-box-1 {
     top:0vw;
     left:32vw; 
-    z-index:1;
+    z-index:3;
 }
 
 .about-box-2 {
     top:1.5vw;
     left:33.5vw; 
-    z-index:2;
+    z-index:4;
 }
 
 #project-items {
@@ -231,6 +253,8 @@ footer {
 
 
 /* --------------------------OTHER CLASSES---------------------------- */
+
+
 .intro-container {
     max-width: 30vw;
     min-height: 500px;
@@ -326,7 +350,7 @@ footer {
 #intro {
     width: 100%;
     min-height: 500px;
-    margin-top: 2vw;
+    padding-top: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -373,51 +397,4 @@ footer {
     h1 {
         font-size: 5.2rem;
     }
-}
-
-/* --------------------------COLOUR PALETTE---------------------------- */
-/* Antique Brass, Desert Sand, Champagne Pink, linen, Bone, Ash Gray, Artichoke, Ebony, Black Olive, Charleston Green */
-
-.abrass1 {
-    color: #b98b73;
-}
-
-.abrass2 {
-    color: #cb997e;
-}
-
-.dsand {
-    color: #ddbea9;
-}
-
-.cpink {
-    color: #ffe8d6;
-}
-
-.linen {
-    color: #fff1e8;
-}
-
-.bone {
-    color: #d4c7b0;
-}
-
-.agray {
-    color: #b7b7a4;
-}
-
-.artichoke {
-    color: #a5a58d;
-}
-
-.ebony {
-    color: #6b705c;
-}
-
-.bolive {
-    color: #3f4238
-}
-
-.cgreen {
-    color: #242621;
 }
