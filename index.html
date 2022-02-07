@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Katie Liu</title>
     <link rel="shortcut icon" type="image/x-icon" href="content/favicon.png" />
+    <meta name="robots" content="noindex">
     <!-- Cardo font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0b80639f9e.js" crossorigin="anonymous"></script>
     <!-- import css & js-->
     <link rel='stylesheet' href='css/style.css'>
     <script defer src="main.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a class='home' href="./index.html"><img src="content/favicon.png"></a>
-        <ul class='meow'>
+    <nav id="navbar">
+        <a class='logo' href="./index.html"><img src="content/favicon.png"></a>
+        <ul class='sections' id="js-menu">
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#contact">contact</a> </li>
+            <li class='resume'><a href="content/KatieLiu_Resume_2022.pdf" target="_blank">resume</a></li>
+            <!-- PDF STAND IN  -->
         </ul>
-        <div style="margin-left: 2rem; width:5.335rem"></div>
+        <div class="sections-margin"></div>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <img src="content/menubar.png">
+        </span>
     </nav>
 
     <main>
@@ -38,13 +46,15 @@
                 <div class='intro-box intro-box-1'></div>
                 <div class='intro-box intro-box-2'>
                     <div class='intro'>
-                        <h5>Hello, I'm</h5>
+                        <h5>Hi there! I'm</h5>
                         <h1> Katie
                             <span style="color:var(--artichoke)"> Liu </span>
                         </h1>
                     </div>
-                    <h5 class='greeting' style='text-align: center;'>It's so nice to meet you!</h5>
                 </div>
+                <h5 class='greeting typewriter' style='text-align: center;'>it's so nice to meet you!</h5>
+
+
             </div>
             <div class='flying-birb'><img src="content/flying_birb.png"></div>
         </header>
@@ -54,18 +64,17 @@
                 <img src="content/profile.jpg">
             </div>
 
-            <div class="container">
-                <div class='profile'>
-                    <h2>About me</h2>
-                    <h5>
-                        I'm Katie, an undergraduate at the University of Ottawa studying Computer Science. Aside from
-                        learning essential algorithms and data structures, I'm currently exploring my areas of interest.
-                        I've built this website so that I could showcase my work to you!
-                        <br><br>
-                        When I'm not preoccupied with studying, you can find me watercolouring and reading up on the
-                        latest webtoon updates.
-                    </h5>
-                </div>
+            <div class='profile'>
+                <h2>About me</h2>
+                <h5>
+                    I'm Katie, an undergraduate at the University of Ottawa studying Computer Science. Aside from
+                    learning algorithms and data structures, I'm currently taking this time to explore my areas of
+                    interests. I've built this website so that I could both get a better grasp of the wonders of web
+                    development, and of course, showcase my work to you!
+                    <br><br>
+                    When I'm not preoccupied with studying, I'm either watercolouring or reading up on the
+                    latest webtoon updates.
+                </h5>
             </div>
         </section>
 
@@ -78,15 +87,16 @@
 
             <div id='project-items'>
                 <div class='project-text'>
-                    <h3>BookTracker v2</h3>
-                    <p>What I'm currently working on! The first iteration was originally a course project, but
-                        ultimately my dick is huge
+                    <h3>BookTracker</h3>
+                    <p> An application that recommends books based on the users' previous reading history and genre of
+                        choice.
                     </p>
-                    <p class='tag'>JavaScript React</p>
+                    <p class='tag'>Java</p>
                 </div>
                 <div class='project-text'>
                     <h3>Reservanté</h3>
-                    <p>A restaurant table reservation program built for the 2020 cmd-f hackathon.</p>
+                    <p>A restaurant table reservation program built for the 2020 cmd-f hackathon. Allows users to
+                        customize seating arrangements and time slots for customer booking.</p>
                     <p class='tag'>Java</p>
                 </div>
                 <div class='project-text'>
@@ -101,19 +111,16 @@
             </div>
         </section>
 
+        <footer>
+            <p> Designed with lots of &nbsp; &hearts; </p>
+            <div class="socials">
+                <a href="https://github.com/WhoIsKatie" target="_blank"><img src="content/github.png"></imgsrc></a>
+                <a href="mailto:katieliu505@gmail.com"><img src="content/email.png"></imgsrc></a>
+            </div>
+        </footer>
     </main>
 
-    <footer id='contact'>
-        <div class="">
-            <div class='title'>
-                <h2>So, you've reached the end...</h2>
-            </div>
 
-            <p class='center'> Designed by Katie Liu &hearts; </p>
-        </div>
-
-        <!-- PDF STAND IN  -->
-    </footer>
 
 
 

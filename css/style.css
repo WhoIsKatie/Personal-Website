@@ -13,6 +13,8 @@
     --ebony: #6b705c;
     --black-olive: #3f4238;
     --charleston-green: #242621;
+    --navbg: rgba(255, 252, 249, 0.3);
+    --boxbg: rgba(107, 112, 92, 0.1);
 }
 
 body::-webkit-scrollbar {
@@ -20,10 +22,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background:rgba(107, 112, 92, 0.3);
+    background:rgba(165, 165, 141, 0.7);
 }
 
 html, body {
+    overflow: visible;
     box-sizing: border-box;
     margin: 0;
     height: 100%;
@@ -31,29 +34,26 @@ html, body {
     padding: 0;
     font-family: 'Cardo', serif;
     background-color: var(--baby-powder);
+    scroll-behavior: smooth;
+}
+
+main, footer {
+    overflow-x: hidden;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-nav {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    transition: top 0.3s;
-}
-
 ul, li {
     display: inline;
+    padding-left: none;
 }
 
 h1 {
     font-family: cardo;
     font-size: 4.8vw;
+    letter-spacing: 0.015em;
     font-weight: normal;
     color: #3f4238;
     margin-bottom: 2.75rem;
@@ -63,7 +63,8 @@ h2 {
     color:var(--artichoke);
     font-family: cardo;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 3rem;
+    letter-spacing: 0.1rem; 
 }
 
 h3 {
@@ -84,95 +85,134 @@ h4  {
 h5  {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
-    color: #3f4238;
-    font-size: 1.1vw;
+    color: var(--ebony);
+    font-size: 1.15vw;
     padding-top: 0.7rem;
+    line-height: 1.7rem;
+}
+
+h5 a {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--ebony);
+    font-size: 1.15vw;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .intro h5 {
     color: #6b705c;
     font-family: 'Cardo', serif;
 }
+
 p {
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: normal;
     color: #242124;
 }
 
-#projects p {
-    font-family: 'Inter', sans-serif;
+.tags p {
+    font-family: "Consolas", monaco, monospace; 
 }
-
-
 
 a {
     font-family: cardo;
 }
 
 #project-items div {
-    background-color:rgba(107, 112, 92, 0.1);
+    background-color:var(--boxbg);
     width:60vw;
-    flex-basis: 125px;
+    flex-basis: 120px;
     flex-shrink: 1;
 }
 
 footer {
     clear: both;
     position: relative;
-    height: 200px;
-    margin-top: -200px;
+    text-align: center;
+    margin-top: 5rem ;
 }
 
 /* --------------------------NAVIGATION BAR---------------------------- */
-#nav-bar {
+#navbar {
+    width: 100%;
     height: var(--navbar-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    transition: top 0.3s;
     align-items: center;
     text-align: center;
-    background-color: rgba(255, 252, 249, 0.5);
-    backdrop-filter: blur(4px);
+    background-color: var(--navbg);
+    backdrop-filter: blur(8px);
     z-index: 10;
 }
 
-.background {
-    filter: blur(4px);
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.logo img{
+    width: 4rem;
+    margin-top: 0.5rem; 
+    margin-left: 1rem; 
 }
 
-.home img{
-    margin-left: 2rem; 
+.sections {
+    margin-right: -0.5rem;
 }
 
-.meow a {
+.sections a {
     color: #b98b73;
     padding: 0.7em 0.8em;
-    margin: 0px 8vw;
+    margin: 0 2vw;
     text-decoration: none;
     font-size: 1.1em;
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
 }
 
 /* Change the color of links on hover */
-.meow a:hover {
+.sections a:hover {
     color:var(--desert-sand);
 }
 
-/* Add a color to the active/current link */
-.meow a.active {
+/*Changes the color to the active/current link */
+.sections a.active {
     color:var(--desert-sand);
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.resume a {
+    padding: 0.45em 0.8em;
+    margin: 0 2vw;
+    padding-right: 0.5em;
+    color: var(--ebony);
+    background-color:rgba(107, 112, 92, 0.1);
+}
+
+.resume a:hover {
+    color:var(--ash-gray);
+}
+
+.resume a.active {
+    color:var(--ash-gray);
+}
+
+.sections-margin {
+    display: none; 
 }
 
 /* --------------------------BOXES---------------------------- */
 .intro-box {
-    background-image: url('../content/intro-window.png');
+    background-image: url('../content/intro-window-2.png');
     background-size: cover;
-    width:26.8vw; 
-    height:13.9vw; 
+    width:27.5vw; 
+    height:14.75vw; 
     position:absolute; 
     margin:auto;
     min-width: 300px;
-    min-height: 155.6px;
+    min-height: 160.91px;
     font-size: 1rem;
 }
 
@@ -183,7 +223,7 @@ footer {
 }
 
 .intro-box-2 {
-    top:0.8vw;
+    top:0.95vw;
     left:1.25vw; 
     z-index:2;
 }
@@ -199,10 +239,7 @@ footer {
     flex-wrap: wrap;
 }
 
-
 /* --------------------------OTHER CLASSES---------------------------- */
-
-
 .intro-container {
     max-width: 28vw;
     min-height: 350px;
@@ -214,11 +251,11 @@ footer {
 }
 
 .container {
-    width: 200rem;
+    width: 125rem;
     min-height: 500px;
     margin: auto;
     margin-top: 2rem;
-    margin-right: 20rem;
+    margin-right: 15rem;
     position: relative; 
     align-items: center;
 } 
@@ -251,24 +288,30 @@ footer {
 }
 
 .greeting {
-    font-size: 1.8rem;
-    margin-top: 23rem;
+    font-size: 1.6rem;
+    margin-top: 20rem;
     font-weight: 800;
+}
+
+.greeting img {
+    width: 50px;
 }
 
 .project-text {
     padding-left: 1.3vw;
+    padding-right: 0.5vw;
     padding-top: 1vw;
 }
 
 .project-text p {
     color: #6b705c;
+    padding-right: 0.3vw;
     margin-top: 0.5vw;
     margin-bottom: 0;
 }
 
 .tag {
-    font-family: Consolas, monaco, monospace; 
+    font-family: "Consolas", monaco, monospace; 
     font-size: 12px;
     margin-top: 0vw;
     padding-right: 1.2vw;
@@ -277,28 +320,47 @@ footer {
 
 
 .title {
+    position: relative;
     margin: auto;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    letter-spacing: 0.2rem; 
+    z-index: 2;
 }
 
 .profile {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    position: absolute;
-}
-.me {
-    padding-top: 5rem;
-}
-.me img {
-    position:relative;
-    margin-left: 20vw;
-    margin-top: -4rem;
-    max-width: 15%;
-    z-index:3;
+    width: 125rem;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-right: 15rem;
+    position: relative; 
+    align-items: center;
 }
 
+.me {
+    width:100vw;
+    padding-top: 6rem;
+    padding-right: 0;
+}
+
+.me img {
+    margin-left: 18vw;
+    margin-top: -12rem;
+    max-width: 35%;
+    z-index:3;
+}
+.socials {
+    width: 6rem;
+    margin: auto;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.socials img{
+    max-height: 1.5rem;
+}
 /* -------------------------- OTHER ---------------------------- */
 #intro {
     width: 100%;
@@ -306,7 +368,7 @@ footer {
     padding-top: 3vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items:flex-start;
 }
 
@@ -322,38 +384,19 @@ footer {
 
 #projects {
     padding: 1vw;
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 
-#contact {
-    margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    text-align: center;
-}
+
 /* -------------------------- MEDIA QUERIES ---------------------------- */
-@media (max-width:768px) {
+@media (max-width: 1500px) {
     
 }
 
-@media (max-width: 1000px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-    .intro {
-        padding-left: 2.8rem;
-    }
-    .branch-birb {
-        display: none;
-    }
-    .flying-birb {
-        display: none;
-    }
-}
 
 @media (max-width: 1200px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.75rem;
     }
 
     h5 {
@@ -375,8 +418,131 @@ footer {
         left:24px; 
         z-index:2;
     }
-}
 
-@media (max-width: 1500px) {
     
 }
+
+@media (max-width: 1100px) {
+    h1 {
+        padding-top: 0.5rem;
+        font-size: 3.35rem;
+    }
+    .intro {
+        padding-left: 2.8rem;
+    }
+    .branch-birb {
+        display: none;
+    }
+    .flying-birb {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    ul {
+        padding-left: 0.5rem;
+    }
+
+    #navbar {
+        align-items:flex-start;
+    }
+    
+    .logo img {
+        margin-top: 1rem; 
+        width: 4rem;
+        padding-right: 0;
+    }
+
+    .sections {
+        margin-top: 125px;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .sections-margin {
+        display: block;
+        margin-left: 2rem; 
+        width:5.335rem
+    }
+
+    .bgactive {
+        --navbar-height: 100%;
+        --navbg: rgba(255, 252, 249, 0.7);
+        font-size: 1.3rem;
+        letter-spacing: 1rem; 
+        animation: transitionIn 300ms;
+    }
+
+    @keyframes transitionIn {
+        from { backdrop-filter: none; }
+        to { backdrop-filter: blur(8px); }
+    }
+
+    .active {
+        display: block;
+    }
+
+    .navbar-toggle {
+        display:inline;
+        position: absolute;
+        top: 25px;
+        right: 5px;
+        cursor: pointer; 
+        font-size: 24px;
+    }
+    
+    .navbar-toggle img {
+        width:45%;
+    }
+
+    
+    .sections a {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .resume a {
+        width: 6em;
+    }
+
+    h1 {
+        padding-top: 0.65rem;
+    }
+
+    h5 {
+        padding-top: 1.1rem;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .profile {
+        margin: 0 auto;
+        margin-top: 8rem;
+        width: 30rem;
+    }
+
+    .me {
+        width:50vw;
+        margin: auto;
+        padding: 4vw clamp(3.25rem, 12vw, 13vw);
+        padding-bottom: 0;
+    }
+
+    .me img {
+        margin: 0;
+        margin-top: -10rem;
+        width: 30vw;
+        max-width: 12rem;
+    }
+
+}
+
