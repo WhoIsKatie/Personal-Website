@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap" rel="stylesheet">
-
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
     <!-- import css & js-->
     <link rel='stylesheet' href='css/style.css'>
     <script defer src="main.js" charset="utf-8"></script>
@@ -19,7 +22,7 @@
 
 <body>
     <nav id="nav-bar">
-        <a class='home' href="katieliu.me"><img src="content/favicon.png"></a>
+        <a class='home' href="./index.html"><img src="content/favicon.png"></a>
         <ul class='meow'>
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
@@ -32,48 +35,37 @@
         <header id='intro'>
             <div class='branch-birb'><img src="content/branch_birb.png"></div>
             <div class='intro-container'>
-                <div class='intro-box intro-box-1'>
-                    <button id='button' class='close-button'></button>
-                    <button id='button' class='resize-button'></button>
-                    <button id='button' class='min-button'></button>
-                </div>
+                <div class='intro-box intro-box-1'></div>
                 <div class='intro-box intro-box-2'>
-                    <button id='button' class='close-button'></button>
-                    <button id='button' class='resize-button'></button>
-                    <button id='button' class='min-button'></button>
                     <div class='intro'>
                         <h5>Hello, I'm</h5>
                         <h1> Katie
-                            <span class="artichoke"> Liu </span>
+                            <span style="color:var(--artichoke)"> Liu </span>
                         </h1>
-                        <h5 class='greeting' style='text-align: center;'>It's so nice to meet you!</h5>
                     </div>
+                    <h5 class='greeting' style='text-align: center;'>It's so nice to meet you!</h5>
                 </div>
             </div>
             <div class='flying-birb'><img src="content/flying_birb.png"></div>
         </header>
 
         <section id='about'>
-            <div class='title'>
-                <h2>About me</h2>
+            <div class="me">
+                <img src="content/profile.jpg">
             </div>
-            <br><br>
-            <div class="container">
-                <div class="me">
-                    <img src="content/profile.jpg">
-                </div>
 
-                <div class='about-box about-box-1'></div>
-                <div class='about-box about-box-2'>
-                    <h5 class='profile'>
-                        I'm Katie, an undergraduate at UOttawa studying Computer Science. Aside from learning
-                        essential algorithms and data structures, I'm currently exploring my areas of interests.
+            <div class="container">
+                <div class='profile'>
+                    <h2>About me</h2>
+                    <h5>
+                        I'm Katie, an undergraduate at the University of Ottawa studying Computer Science. Aside from
+                        learning essential algorithms and data structures, I'm currently exploring my areas of interest.
+                        I've built this website so that I could showcase my work to you!
                         <br><br>
-                        When I'm not preoccupied with studying, you can find me watercolouring my existential pain away
-                        &#128512;
+                        When I'm not preoccupied with studying, you can find me watercolouring and reading up on the
+                        latest webtoon updates.
                     </h5>
                 </div>
-
             </div>
         </section>
 
@@ -86,28 +78,24 @@
 
             <div id='project-items'>
                 <div class='project-text'>
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
-                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
-                        Adipisci, natus labore!
+                    <h3>BookTracker v2</h3>
+                    <p>What I'm currently working on! The first iteration was originally a course project, but
+                        ultimately my dick is huge
                     </p>
-                    <p class='tag'>Java My Ass</p>
+                    <p class='tag'>JavaScript React</p>
                 </div>
                 <div class='project-text'>
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
-                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
-                        Adipisci, natus labore!
-                    </p>
-                    <p class='tag'>Java My Ass</p>
+                    <h3>Reservanté</h3>
+                    <p>A restaurant table reservation program built for the 2020 cmd-f hackathon.</p>
+                    <p class='tag'>Java</p>
                 </div>
                 <div class='project-text'>
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit esse voluptatum officiis
-                        similique odit ratione, ex cum ipsa et sint vitae velit placeat repudiandae quia temporibus?
-                        Adipisci, natus labore!
+                    <h3>Javmos v2</h3>
+                    <p>The second iteration of my original graphing calculator, Javmos; a desktop application that takes
+                        after the advanced graphing calculator, Desmos. Graph functions ranging from polynomials and
+                        logarithms to trigonometric.
                     </p>
-                    <p class='tag'>Java My Ass</p>
+                    <p class='tag'>Java</p>
 
                 </div>
             </div>
@@ -117,7 +105,9 @@
 
     <footer id='contact'>
         <div class="">
-
+            <div class='title'>
+                <h2>So, you've reached the end...</h2>
+            </div>
 
             <p class='center'> Designed by Katie Liu &hearts; </p>
         </div>
