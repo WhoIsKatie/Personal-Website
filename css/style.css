@@ -289,7 +289,7 @@ footer {
 
 .greeting {
     font-size: 1.6rem;
-    margin-top: 20rem;
+    margin-top: 20vw;
     font-weight: 800;
 }
 
@@ -435,6 +435,10 @@ footer {
     }
     .flying-birb {
         display: none;
+    }
+
+    .greeting {
+        margin-top: 20rem;
     }
 
 }
