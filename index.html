@@ -19,16 +19,19 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0b80639f9e.js" crossorigin="anonymous"></script>
     <!-- import css & js-->
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/header.css'>
+    <link rel='stylesheet' href='css/about.css'>
+    <link rel='stylesheet' href='css/projects.css'>
     <script defer src="main.js" charset="utf-8"></script>
 </head>
 
 <body>
     <nav id="navbar">
-        <a class='logo' href="https://katieliu.dev"><img src="content/favicon.png"></a>
+        <a class='logo' href="https://katieliu.dev"></a>
         <ul class='sections' id="js-menu">
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
+            <li><a class="pink" href="#projects">projects</a></li>
+            <li><a class="thistle" href="#about">about</a></li>
             <li class='resume'><a href="content/KatieLiu_Resume_2022.pdf" target="_blank">resume</a></li>
         </ul>
         <div class="sections-margin"></div>
@@ -38,59 +41,38 @@
     </nav>
 
     <main>
-        <header id='intro'>
-            <div class='branch-birb'><img src="content/branch_birb.png"></div>
-            <div class='intro-container'>
-                <div class='intro-box intro-box-1'></div>
-                <div class='intro-box intro-box-2'>
-                    <div class='intro'>
-                        <h5>Hi there! I'm</h5>
+        <header>
+            <div id="blossom-bg">
+                <div id='blossom-1'><img src="content/blossom-1.png"></div>
+                <div id='blossom-2'><img src="content/blossom-2.png"></div>
+            </div>
+
+            <div id='intro-container'>
+                <div id='intro-box-1' class='intro-box'></div>
+                <div id='intro-box-2' class='intro-box'>
+                    <div id='intro'>
+                        <h5>Hey there! This is</h5>
                         <h1> Katie
-                            <span style="color:var(--artichoke)"> Liu </span>
+                            <span style="color: var(--baby-pink)">L</span><span
+                                style="color: var(--thistle)">i</span><span
+                                style="color: var(--wild-blue-yonder)">u</span>
                         </h1>
                     </div>
                 </div>
-                <h5 class='greeting' style='text-align: center;'>it's so nice to meet you!</h5>
-
-
+                <!-- <h5 class='greeting' style='text-align: center;'>it's so nice to meet you!</h5> -->
             </div>
-            <div class='flying-birb'><img src="content/flying_birb.png"></div>
         </header>
 
-        <section id='about'>
-            <div class="me">
-                <img src="content/profile.jpg">
-            </div>
-
-            <div class='profile'>
-                <h2>About me</h2>
-                <h5>
-                    I'm Katie, an undergraduate at the University of Ottawa studying Computer Science. Aside from
-                    learning algorithms and data structures, I'm currently taking this time to explore my areas of
-                    interests. I've built this website so that I could both get a better grasp of the wonders of web
-                    development, and of course, showcase my work to you!
-                    <br><br>
-                    When I'm not preoccupied with studying, I'm either obsessing over my <strike>hampter</strike>
-                    hamster or reading up on the latest webtoon updates ^^
-                </h5>
-            </div>
-        </section>
-
         <section id='projects'>
-            <div class='title'>
-                <div style='margin-right: 60vw'>
-                    <h2>My Projects</h2>
-                </div>
-            </div>
+            <h2>My Projects</h2>
 
             <div id='project-items'>
                 <div class='project-text'>
-                    <h3>BookTracker</h3>
-                    <p> By tracking users' reading history, this application can recommend them other books
-                        to read depending on the genre and demographic of choice. I've decided to create this book
-                        tracker application to fulfil all of my literary needs.
+                    <h3>Mealer</h3>
+                    <p> A class-assigned meal pick-up application for chefs, clients, and administrators using Java and
+                        Android SDK.
                     </p>
-                    <p class='tag'>Java</p>
+                    <p class='tag'>Java Android SDK Firebase</p>
                 </div>
                 <div class='project-text'>
                     <h3>Reservanté</h3>
@@ -107,6 +89,29 @@
                     <p class='tag'>Java</p>
 
                 </div>
+            </div>
+        </section>
+
+        <section id='about'>
+            <div class="me">
+                <img src="content/profile.png">
+            </div>
+
+            <div class='profile'>
+                <h2>About me</h2>
+                <h5>
+                    As your typical computer science undergrad, I study the ~beloved~ algorithms and data structures by
+                    day, and tinker about the various projects of mine (that can never be too perfect) by night!
+                    <br><br>
+                    I'm currently taking this time to better understand what is a good, if not exemplary, software
+                    engineer. But if there is at least one philosophy this humble human bean has learned, it must be
+                    that it's, quite frankly, impossible to not find a way to grow. I've built this website so that I
+                    could both, get a better grasp of the wonders of web development, and of course, showcase my work to
+                    you!
+                    <br><br>
+                    When I'm not preoccupied with studying (and/or watering my very large brain), I'm either obsessing
+                    over my <strike>hampter</strike> hamster or reading up on the latest webtoon updates ^^
+                </h5>
             </div>
         </section>
 

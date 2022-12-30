@@ -1,0 +1,54 @@
+@import url("main.css");
+
+#projects {
+    padding: 10vh;
+    margin-top: 5vh;
+}
+
+#project-items {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#project-items div {
+    background-color: var(--boxbg);
+    width: 60vw;
+    flex-basis: 120px;
+    flex-shrink: 1;
+}
+
+.tags p {
+    font-family: "Consolas", monaco, monospace;
+}
+
+
+.project-text {
+    padding-left: 1.3vw;
+    padding-right: 0.5vw;
+    padding-top: 1vw;
+}
+
+.project-text p {
+    color: var(--raisin-black);
+    padding-right: 0.3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.tag {
+    font-family: "Consolas", monaco, monospace;
+    font-size: 12px;
+    margin-top: 0vw;
+    padding-right: 1.2vw;
+    text-align: end;
+}

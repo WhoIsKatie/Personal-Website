@@ -1,0 +1,35 @@
+@import url("main.css");
+
+
+#about {
+    width: 100%;
+    min-height: 500px;
+    padding-top: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    width: 125rem;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-right: 15rem;
+    position: relative;
+    align-items: center;
+}
+
+.me {
+    width: 100vw;
+    padding-top: 6rem;
+    padding-right: 0;
+}
+
+.me img {
+    margin-left: 18vw;
+    margin-top: -12rem;
+    max-width: 35%;
+    z-index: 3;
+}
