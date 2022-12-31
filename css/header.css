@@ -47,7 +47,7 @@ header {
 }
 
 #blossom-2 img {
-    width: 25vw;
+    width: 30vw;
     height: auto;
 }
 
@@ -114,8 +114,8 @@ header {
     transition: top 0.3s;
     align-items: center;
     text-align: center;
-    border-bottom: solid var(--border);
-
+    border-bottom: solid var(--thistle-border);
+    background-color: var(--navbg);
     backdrop-filter: blur(4px);
     z-index: 10;
 }

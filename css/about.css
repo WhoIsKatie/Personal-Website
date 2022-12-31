@@ -3,33 +3,44 @@
 
 #about {
     width: 100%;
-    min-height: 500px;
-    padding-top: 8vw;
+    height: auto;
+    margin-top: 30vh;
+    padding-top: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .profile {
-    width: 125rem;
-    min-height: 500px;
-    margin: auto;
-    margin-top: 2rem;
-    margin-right: 15rem;
-    position: relative;
-    align-items: center;
+    width: 100%;
+    margin: 0vh 3vw 20vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.me {
-    width: 100vw;
-    padding-top: 6rem;
-    padding-right: 0;
+.profile p {
+    margin-top: 3vh;
+    font-size: 16px;
+    letter-spacing: 0.08vw;
 }
 
-.me img {
-    margin-left: 18vw;
-    margin-top: -12rem;
-    max-width: 35%;
-    z-index: 3;
+#me {
+    margin-left: 10vw;
+    margin-top: 3vh;
+    width: 12vw;
+}
+
+#blossom-4 {
+    margin-top: 5vh;
+    width: 3vw;
+    align-self: center;
+}
+
+#hampter {
+    margin-right: 10vw;
+    margin-top: 30vh;
+    width: 10vw;
 }

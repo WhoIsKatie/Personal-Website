@@ -1,8 +1,9 @@
 :root {
     font-size: 15px;
     --navbar-height: 70px;
-    --border: rgba(228, 207, 237, 0.3);
-    --navbg: rgba(32, 26, 32, 0.01);
+    --thistle-border: rgba(228, 207, 237, 0.3);
+    --pink-border: rgba(228, 184, 184, 0.3);
+    --navbg: rgba(32, 26, 32, 0.7);
     --boxbg: rgba(228, 207, 237, 0.2);
     --antique-brass: #b98b73;
     --light-antique-brass: #cb997e;
@@ -24,6 +25,7 @@
     --sage: #c4c4ab;
     --baby-pink: #e4b8b8;
     --cosmic-latte: #fffbed;
+    --clear-cosmic-latte: rgb(255, 251, 237, 0.7);
 }
 
 @font-face {
@@ -36,9 +38,9 @@
 }
 
 @font-face {
-    font-family: 'black_mangothin';
-    src: url('../content/font_black_mango/black_mango_thin-webfont.woff2') format('woff2'),
-        url('../content/font_black_mango/black_mango_thin-webfont.woff') format('woff');
+    font-family: 'black_mangoregular';
+    src: url('../content/font_black_mango/black_mango_regular-webfont.woff2') format('woff2'),
+        url('../content/font_black_mango/black_mango_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -61,6 +63,7 @@ body {
     width: 100%;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: var(--clear-cosmic-latte);
     background-color: var(--raisin-black);
     scroll-behavior: smooth;
 }
@@ -93,17 +96,17 @@ h1 {
 }
 
 h2 {
-    color: var(--thistle);
+    color: var(--wild-blue-yonder);
     font-family: 'black_mangolight', serif;
     font-weight: normal;
     font-size: 3rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.015vw;
 }
 
 h3 {
-    color: var(--thistle);
+    color: var(--baby-pink);
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1vw;
     margin-top: 0.1rem;
     margin-bottom: 0;
@@ -137,11 +140,11 @@ p {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: normal;
-    color: var(--wild-blue-yonder);
+    letter-spacing: 0.015vw;
 }
 
 a {
-    font-family: 'black_mangolight';
+    font-family: 'black_mangoregular';
 }
 
 footer {
@@ -164,13 +167,6 @@ footer {
     align-items: center;
 }
 
-.title {
-    position: relative;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    z-index: 2;
-}
 
 /* ------------------------------- FOOTER -------------------------------- */
 
@@ -230,11 +226,11 @@ footer {
         padding-left: 2.8rem;
     }
 
-    .blossom-1 {
+    .blossom-bg img {
         display: none;
     }
 
-    .blossom-2 {
+    .blossom-3 img {
         display: none;
     }
 
@@ -254,13 +250,13 @@ footer {
     }
 
     .logo img {
-        margin-top: 1rem;
-        width: 4rem;
+        margin-top: 1vh;
+        width: 4vw;
         padding-right: 0;
     }
 
     .sections {
-        margin-top: 125px;
+        margin-top: 10vh;
         list-style-type: none;
         width: 100%;
         height: 100%;
@@ -275,10 +271,11 @@ footer {
 
     .bgactive {
         --navbar-height: 100%;
-        --navbg: rgba(255, 252, 249, 0.7);
+        flex-direction: column;
         font-size: 1.3rem;
         letter-spacing: 1rem;
         animation: transitionIn 300ms;
+        border-bottom: none;
     }
 
     @keyframes transitionIn {
@@ -314,10 +311,6 @@ footer {
         align-items: center;
         text-align: center;
         margin: 50px auto;
-    }
-
-    .resume a {
-        width: 6em;
     }
 
     h1 {
