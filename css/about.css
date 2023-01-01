@@ -4,7 +4,7 @@
 #about {
     width: 100%;
     height: auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     padding-top: 8vh;
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@
 
 .profile {
     width: 100%;
-    margin: 0vh 3vw 20vh 5vw;
+    margin: 0vh 3vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,13 +23,14 @@
 
 .profile p {
     margin-top: 3vh;
-    font-size: 16px;
-    letter-spacing: 0.08vw;
+    font-size: 18px;
+    letter-spacing: 0.03vw;
+    line-height: 4.5vh;
 }
 
 #me {
-    margin-left: 10vw;
-    margin-top: 3vh;
+    margin-left: 6vw;
+    margin-top: 15vh;
     width: 12vw;
 }
 
@@ -41,6 +42,6 @@
 
 #hampter {
     margin-right: 10vw;
-    margin-top: 30vh;
+    margin-top: 40vh;
     width: 10vw;
 }
