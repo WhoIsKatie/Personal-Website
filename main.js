@@ -14,7 +14,7 @@ navBarToggle.addEventListener('click', function () {
     if (navbar.style.borderBottom != 'none')
         navbar.style.borderBottom = 'none';
     else
-        navbar.style.borderBottom = 'solid var(--thistle-border)';
+        navbar.style.borderBottom = "solid var(--thistle-border)";
     enable = !enable;
 });
 
@@ -104,3 +104,49 @@ window.onscroll = function () {
     console.log([lowest, middle, highest]);
     return [lowest, middle, highest];
 } */
+
+const nightToggle = document.getElementById('night-mode');
+const moon = document.getElementById('moon');
+const blossom3 = document.getElementById('blossom-3').querySelector('img');
+const blossom4 = document.getElementById('blossom-4');
+const introBox1 = document.getElementById('intro-box-1');
+const introBox2 = document.getElementById('intro-box-2');
+var night = true;
+
+nightToggle.addEventListener('click', function () {
+    if (night) {
+        document.documentElement.style.setProperty('--bg', 'var(--cosmic-latte)');
+        document.documentElement.style.setProperty('--font', 'var(--clear-raisin)');
+        document.documentElement.style.setProperty('--primary', 'var(--clear-raisin)');
+        document.documentElement.style.setProperty('--secondary-1', 'var(--wysteria)');
+        document.documentElement.style.setProperty('--primary-border', 'var(--clear-thistle-3)');
+        document.documentElement.style.setProperty('--secondary-border', 'var(--baby-pink)');
+        document.documentElement.style.setProperty('--navbg', 'var(--clearer-cosmic-latte)');
+        document.documentElement.style.setProperty('--boxbg', 'var(--clear-thistle-2)');
+        document.documentElement.style.setProperty('--tags', 'var(--clear-pink-2)');
+        document.documentElement.style.setProperty('--featured-tags', 'var(--clear-raisin-2)');
+        document.querySelector('h5').style.fontFamily = 'black_mangoregular';
+        introBox1.style.backgroundImage = "url('content/intro-window-1-light.png')";
+        introBox2.style.backgroundImage = "url('content/intro-window-2-light.png')";
+        blossom3.style.opacity = '1';
+        blossom4.src = "content/blossom-4-light.png";
+
+    } else {
+        document.documentElement.style.setProperty('--bg', 'var(--raisin-black)');
+        document.documentElement.style.setProperty('--font', 'var(--clear-cosmic-latte)');
+        document.documentElement.style.setProperty('--primary', 'var(--cosmic-latte)');
+        document.documentElement.style.setProperty('--secondary-1', 'var(--thistle)');
+        document.documentElement.style.setProperty('--primary-border', 'var(--clear-thistle-2)');
+        document.documentElement.style.setProperty('--secondary-border', 'var(--clear-pink)');
+        document.documentElement.style.setProperty('--navbg', 'var(--clear-raisin)');
+        document.documentElement.style.setProperty('--boxbg', 'var(--clear-thistle)');
+        document.documentElement.style.setProperty('--tags', 'var(--clear-pink)');
+        document.documentElement.style.setProperty('--featured-tags', 'var(--clear-thistle-2)');
+        document.querySelector('h5').style.fontFamily = 'black_mangolight';
+        introBox1.style.backgroundImage = "url('content/intro-window-1.png')";
+        introBox2.style.backgroundImage = "url('content/intro-window-2.png')";
+        blossom3.style.opacity = '0.65';
+        blossom4.src = "content/blossom-4.png";
+    }
+    night = !night;
+});

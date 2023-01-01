@@ -28,13 +28,21 @@
 
 <body>
     <nav id="navbar">
-        <a class='logo' href="https://katieliu.dev"></a>
+        <a title='home' class='logo' href="https://katieliu.dev">
+            Katie <span style="color: var(--baby-pink)">L</span><span style="color: var(--secondary-1)">i</span><span
+                style="color: var(--wild-blue-yonder)">u</span>
+        </a>
         <ul class='sections' id="js-menu">
             <li><a class="pink" href="#projects">projects</a></li>
-            <li><a class="thistle" href="#about">about</a></li>
+            <li><a class="lilac" href="#about">about</a></li>
             <li class='resume'><a href="content/KatieLiu_Resume_2023.pdf" target="_blank">resume</a></li>
+            <li>
+                <button title="night mode" id="night-mode">
+                    <div id="moon"></div>
+                </button>
+            </li>
         </ul>
-        <div class="sections-margin"></div>
+
         <span class="navbar-toggle" id="js-navbar-toggle">
             <img src="content/menubar.png">
         </span>
@@ -54,7 +62,7 @@
                         <h5>Hey there! This is</h5>
                         <h1> Katie
                             <span style="color: var(--baby-pink)">L</span><span
-                                style="color: var(--thistle)">i</span><span
+                                style="color: var(--secondary-1)">i</span><span
                                 style="color: var(--wild-blue-yonder)">u</span>
                         </h1>
                     </div>
@@ -102,15 +110,17 @@
                         <video>
 
                         </video>
-                        <h3>Mealer</h3>
-                        <p> A class-assigned meal pick-up application for chefs, clients, and administrators using Java
-                            and Android SDK.
-                        </p>
-                        <p class='tags'>
-                            <span>Java</span><span>
-                                Android SDK</span><span>
-                                Firebase</span>
-                        </p>
+                        <div id="featured-info">
+                            <h3 style="color: var(--thistle)">Mealer</h3>
+                            <p> A class-assigned meal pick-up application for chefs, clients, and administrators using
+                                Java and Android SDK.
+                            </p>
+                            <p class='featured-tags tags'>
+                                <span>Java</span><span>
+                                    Android SDK</span><span>
+                                    Firebase</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,9 +153,11 @@
         </section>
 
         <footer>
-            <p> Designed with lots of &nbsp; &hearts; </p>
+            <p> designed with lots of &nbsp; &hearts; </p>
             <div class="socials">
                 <a href="https://github.com/WhoIsKatie" target="_blank"><img src="content/github.png"></imgsrc></a>
+                <a href="https://www.linkedin.com/in/katieliu5/" target="_blank"><img src="content/linkedin.png">
+                    </imgsrc></a>
                 <a href="mailto:katieliu505@gmail.com"><img src="content/email.png"></imgsrc></a>
             </div>
         </footer>

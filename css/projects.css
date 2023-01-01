@@ -7,7 +7,7 @@
 }
 
 #projects h2 {
-    color: var(--thistle)
+    color: var(--secondary-1)
 }
 
 #project-content {
@@ -35,20 +35,18 @@
     flex-grow: 1;
     margin-left: 5vw;
     justify-content: center;
-    color: var(--cosmic-latte);
+    color: var(--primary);
 }
 
 #featured-container {
+    display: flex;
     width: 70%;
     height: auto;
     background-color: var(--boxbg);
     margin-top: 23.2vh;
     padding: 1vw 1.3vw;
-
-}
-
-#featured-project h3 {
-    color: var(--thistle)
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #featured-project video {
@@ -65,6 +63,7 @@
 #blossom-3 img {
     width: 25vw;
     height: auto;
+    opacity: 0.65;
 }
 
 .title {
@@ -78,7 +77,7 @@
 }
 
 .project-item {
-    border: solid var(--pink-border);
+    border: solid var(--secondary-border);
     width: 33vw;
     flex-basis: 120px;
     flex-grow: 1;
@@ -90,9 +89,13 @@
 .tags {
     font-family: "Consolas", monaco, monospace;
     font-size: 12px;
-    color: rgba(228, 207, 237, 0.5);
+    color: var(--tags);
     margin: 0vh;
     text-align: end;
+}
+
+.featured-tags {
+    color: var(--featured-tags);
 }
 
 .tags span {

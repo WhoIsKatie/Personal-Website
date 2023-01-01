@@ -1,31 +1,38 @@
 :root {
     font-size: 15px;
     --navbar-height: 70px;
-    --thistle-border: rgba(228, 207, 237, 0.3);
-    --pink-border: rgba(228, 184, 184, 0.3);
-    --navbg: rgba(32, 26, 32, 0.7);
-    --boxbg: rgba(228, 207, 237, 0.2);
-    --antique-brass: #b98b73;
-    --light-antique-brass: #cb997e;
-    --desert-sand: #ddbea9;
-    --champagne-pink: #ffe8d6;
-    --linen: #fff1e8;
-    --baby-powder: #fffcf9;
-    --bone: #d4c7b0;
-    --ash-gray: #b7b7a4;
-    --artichoke: #a5a58d;
-    --ebony: #6b705c;
-    --black-olive: #3f4238;
-    --charleston-green: #242621;
-
-    /* updated theme! */
     --raisin-black: #201a20;
     --thistle: #e4cfed;
+    --wysteria: #CFAADF;
     --wild-blue-yonder: #afbde1;
     --sage: #c4c4ab;
     --baby-pink: #e4b8b8;
     --cosmic-latte: #fffbed;
+
+    --clearer-cosmic-latte: rgb(255, 251, 237, 0.2);
     --clear-cosmic-latte: rgb(255, 251, 237, 0.7);
+    --clear-thistle: rgba(228, 207, 237, 0.2);
+    --clear-thistle-2: rgba(228, 207, 237, 0.3);
+    --clear-thistle-3: rgba(228, 207, 237, 0.5);
+    --clear-wysteria: rgba(207, 170, 223, 0.5);
+    --clear-pink: rgba(228, 184, 184, 0.3);
+    --clear-pink-2: rgba(228, 184, 184, 0.7);
+    --clear-raisin: rgba(32, 26, 32, 0.7);
+    --clear-raisin-2: rgba(32, 26, 32, 0.4);
+    --clear: rgba(0, 0, 0, 0);
+
+    --bg: var(--raisin-black);
+    --font: var(--clear-cosmic-latte);
+    --primary: var(--cosmic-latte);
+    --secondary-1: var(--thistle);
+    --secondary-2: var(--baby-pink);
+    --secondary-3: var(--wild-blue-yonder);
+    --primary-border: var(--clear-thistle-2);
+    --secondary-border: var(--clear-pink);
+    --navbg: var(--clear-raisin);
+    --boxbg: var(--clear-thistle);
+    --tags: var(--clear-pink);
+    --featured-tags: var(--clear-thistle-2);
 }
 
 @font-face {
@@ -34,7 +41,6 @@
         url('../content/font_black_mango/black_mango_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -43,7 +49,6 @@
         url('../content/font_black_mango/black_mango_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body::-webkit-scrollbar {
@@ -51,7 +56,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--cosmic-latte);
+    background-color: var(--boxbg);
 }
 
 html,
@@ -63,8 +68,8 @@ body {
     width: 100%;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    color: var(--clear-cosmic-latte);
-    background-color: var(--raisin-black);
+    color: var(--font);
+    background-color: var(--bg);
     scroll-behavior: smooth;
 }
 
@@ -79,10 +84,12 @@ footer {
     box-sizing: inherit;
 }
 
-ul,
+ul {
+    padding-inline-start: 0em;
+}
+
 li {
     display: inline;
-    padding-left: none;
     font-family: 'black_mangolight';
 }
 
@@ -91,7 +98,7 @@ h1 {
     font-size: 4.8vw;
     letter-spacing: 0.015em;
     font-weight: normal;
-    color: var(--cosmic-latte);
+    color: var(--primary);
     margin-bottom: 2.75rem;
 }
 
@@ -119,21 +126,12 @@ h4 {
 }
 
 h5 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'black_mangolight', serif;
+    font-size: 1.25em;
     font-weight: normal;
-    color: var(--cosmic-latte);
-    font-size: 1.15vw;
+    color: var(--bg);
     padding-top: 0.7rem;
     line-height: 1.7rem;
-}
-
-h5 a {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    color: var(--cosmic-latte);
-    font-size: 1.15vw;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 p {
@@ -152,6 +150,7 @@ footer {
     position: relative;
     text-align: center;
     margin-top: 5rem;
+    color: var(--wild-blue-yonder);
 }
 
 /* --------------------------- OTHER CLASSES ---------------------------- */
@@ -171,16 +170,17 @@ footer {
 /* ------------------------------- FOOTER -------------------------------- */
 
 .socials {
-    width: 6rem;
+    width: 8vw;
     margin: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 3vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .socials img {
-    max-height: 1.5rem;
+    height: 3.5vh;
+    opacity: 0.6;
 }
 
 
@@ -249,7 +249,7 @@ footer {
         align-items: flex-start;
     }
 
-    .logo img {
+    .logo {
         margin-top: 1vh;
         width: 4vw;
         padding-right: 0;

@@ -61,13 +61,6 @@ header {
     width: 50px;
 }
 
-
-#intro h5 {
-    color: var(--raisin-black);
-    font-family: 'black_mangolight', serif;
-    font-size: 1.25em;
-}
-
 /* --------------------------BOXES---------------------------- */
 #intro-container {
     min-height: 350px;
@@ -114,46 +107,53 @@ header {
     transition: top 0.3s;
     align-items: center;
     text-align: center;
-    border-bottom: solid var(--thistle-border);
+    border-bottom: solid var(--primary-border);
     background-color: var(--navbg);
     backdrop-filter: blur(4px);
     z-index: 10;
 }
 
-.logo img {
-    width: 4rem;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
+.logo {
+    margin-left: 1vw;
+    padding: 0.3em 0.4em;
+    color: var(--primary);
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
 }
 
 .sections {
-    margin-right: -0.5rem;
+    width: 40vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sections a {
     padding: 0.7em 0.8em;
-    margin: 0 2vw;
     text-decoration: none;
     font-size: 1.1em;
     letter-spacing: 0.3em;
 }
 
-.pink {
-    color: var(--baby-pink)
+.lilac {
+    color: var(--secondary-1);
 }
 
-.thistle {
-    color: var(--thistle);
+.pink {
+    color: var(--secondary-2)
 }
 
 /* Change the color of links on hover */
 .sections a:hover {
-    color: var(--cosmic-latte);
+    color: var(--primary);
 }
 
 /*Changes the color to the active/current link */
 .sections a.active {
-    color: var(--cosmic-latte);
+    color: var(--primary);
 }
 
 .navbar-toggle {
@@ -161,20 +161,32 @@ header {
 }
 
 .resume a {
-    padding: 0.45em 0.8em;
-    margin: 0 2vw;
+    align-items: center;
     padding-right: 0.5em;
-    color: var(--wild-blue-yonder);
+    color: var(--secondary-3);
 }
 
 .resume a:hover {
-    color: var(--cosmic-latte);
+    color: var(--primary);
 }
 
 .resume a.active {
-    color: var(--cosmic-latte);
+    color: var(--primary);
 }
 
-.sections-margin {
-    display: none;
+#night-mode {
+    width: 3.5rem;
+    height: 3rem;
+    background-color: var(--clear);
+    border: none;
+    cursor: pointer;
+}
+
+#moon {
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0.55em 0.55em 0 0 var(--primary);
+    top: -0.6rem;
 }
