@@ -72,7 +72,6 @@
         </header>
 
         <section id='projects'>
-
             <div id='project-content'>
                 <div id='project-items'>
                     <h2 class='title'><span>my</span> projects</h2>
@@ -107,13 +106,13 @@
                 </div>
                 <div id="featured-project">
                     <div id="featured-container">
-                        <video>
-
-                        </video>
                         <div id="featured-info">
-                            <h3 style="color: var(--thistle)">Mealer</h3>
-                            <p> A class-assigned meal pick-up application for chefs, clients, and administrators using
-                                Java and Android SDK.
+                            <h3 style="color: var(--thistle)">
+                                <a href="https://github.com/WhoIsKatie/Mealer" target="_blank">Mealer</a>
+                            </h3>
+                            <p> A class-assigned meal pick-up application for chefs, clients, and administrators. Offers
+                                Ottawa's local cooks a convenient way to sell meals to clients from the comfort of their
+                                home.
                             </p>
                             <p class='featured-tags tags'>
                                 <span>Java</span><span>
@@ -121,6 +120,37 @@
                                     Firebase</span>
                             </p>
                         </div>
+                        <div id="featured-carousel">
+                            <div class="screenshot hide" title="client: homepage">
+                                <img src="content/screenshots/clienthome.jpg"></img>
+                            </div>
+                            <div class="screenshot hide">
+                                <img src="content/screenshots/search.jpg" title="client: search page"></img>
+                            </div>
+                            <div class="screenshot hide">
+                                <img src="content/screenshots/mealview.jpg" title="client: mealview page"></img>
+                            </div>
+                            <div class="screenshot hide">
+                                <img src="content/screenshots/landing.jpg" title="landing page"></img>
+                            </div>
+                            <div class="screenshot hide">
+                                <img src="content/screenshots/menu.jpg" title="cook: homepage (menu)"></img>
+                            </div>
+                            <div class="screenshot hide">
+                                <img src="content/screenshots/cookprofile.jpg" title="cook: profile page"></img>
+                            </div>
+                            <div id="dotpos">
+                                <span class="dot" onclick="currentSlide(0)"></span>
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -135,14 +165,13 @@
                 <p>
                     Studying computer science in university has always been a dream of mine. Despite only reaching
                     the tip of the iceberg, I've found that the field is a brilliant world well worth the adversities I
-                    have faced to get here. And for this reason, my pursuit of this passion has lead to encompass my
+                    have faced to be here. And for this reason, my pursuit of this passion has lead to encompass my
                     commitment to promoting diversity and inclusion within the field of computer science. In essence, I
-                    believe that diversity is essential for driving innovation and effectively, addressing the complex
-                    challenges of today.
+                    believe that diversity is essential for driving innovation and effectively, addressing complex
+                    challenges.
                     <br><br>
-                    In addition, I am committed to mentoring my peers, offering support, and
-                    sharing my knowledge to help them prosper and experience the same passion for the art of software
-                    engineering as I do.
+                    In addition, I am committed to mentoring my peers, and offering knowledge and support to help them
+                    prosper and, hopefully, share the same passion for the art of software engineering as I do.
                     <br><br>
                     When I'm not preoccupied with studying, I'm either obsessing over my <strike>hampter</strike>
                     hamster or reading up on the latest webtoon updates ^^
@@ -155,7 +184,8 @@
         </section>
 
         <footer>
-            <p> designed with lots of &nbsp; &hearts; </p>
+            <a href="https://github.com/WhoIsKatie/Personal-Website-v1.0" target="_blank">
+                designed with lots of &nbsp;&hearts; </a>
             <div class="socials">
                 <a href="https://github.com/WhoIsKatie" target="_blank"><img src="content/github.png"></imgsrc></a>
                 <a href="https://www.linkedin.com/in/katieliu5/" target="_blank"><img src="content/linkedin.png">
@@ -164,10 +194,6 @@
             </div>
         </footer>
     </main>
-
-
-
-
 
 </body>
 

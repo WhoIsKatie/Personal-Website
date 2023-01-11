@@ -64,11 +64,8 @@ header {
 /* --------------------------BOXES---------------------------- */
 #intro-container {
     min-height: 350px;
-    flex-grow: 0.7;
-    margin: 38vh 35.5vw 0;
+    margin: 38vh 36vw 0;
     position: relative;
-    align-items: center;
-    justify-content: center;
 }
 
 .intro-box {
@@ -84,14 +81,14 @@ header {
 }
 
 #intro-box-1 {
-    top: -0.5vw;
+    top: min(-0.5em, -1.2vh);
     left: 0vw;
     z-index: 1;
 }
 
 #intro-box-2 {
     background-image: url('../content/intro-window-2.png');
-    top: 0.95vw;
+    top: max(1.05em, 1vh);
     left: 1.5vw;
     z-index: 2;
 }
@@ -136,6 +133,7 @@ header {
     text-decoration: none;
     font-size: 1.1em;
     letter-spacing: 0.3em;
+    transition: color 200ms;
 }
 
 .lilac {
@@ -180,6 +178,10 @@ header {
     background-color: var(--clear);
     border: none;
     cursor: pointer;
+}
+
+#night-mode:hover #moon {
+    filter: drop-shadow(0 0 0.55rem var(--primary));
 }
 
 #moon {

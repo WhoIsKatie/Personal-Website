@@ -4,7 +4,7 @@
 #about {
     width: 100%;
     height: auto;
-    margin-top: 20vh;
+    margin-top: 40vh;
     padding-top: 8vh;
     display: flex;
     flex-direction: row;
@@ -23,13 +23,13 @@
 
 .profile p {
     margin-top: 3vh;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.03vw;
-    line-height: 4.5vh;
+    line-height: 4vh;
 }
 
 #me {
-    margin-left: 6vw;
+    margin-left: 10vw;
     margin-top: 15vh;
     width: 12vw;
 }

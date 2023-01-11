@@ -145,17 +145,6 @@ a {
     font-family: 'black_mangoregular';
 }
 
-footer {
-    clear: both;
-    position: relative;
-    text-align: center;
-    margin-top: 5rem;
-    color: var(--wild-blue-yonder);
-}
-
-/* --------------------------- OTHER CLASSES ---------------------------- */
-
-
 .container {
     width: 125rem;
     min-height: 500px;
@@ -169,9 +158,32 @@ footer {
 
 /* ------------------------------- FOOTER -------------------------------- */
 
+footer {
+    clear: both;
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--wild-blue-yonder);
+}
+
+footer a {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.015vw;
+    text-decoration: none;
+    color: var(--wild-blue-yonder);
+    transition: color 200ms;
+}
+
+footer a:hover {
+    color: var(--cosmic-latte);
+}
+
 .socials {
     width: 8vw;
     margin: auto;
+    padding-top: 3vh;
     padding-bottom: 3vh;
     display: flex;
     flex-direction: row;
@@ -180,9 +192,8 @@ footer {
 
 .socials img {
     height: 3.5vh;
-    opacity: 0.6;
+    filter: var(--cosmic-latte);
 }
-
 
 /* -------------------------- MEDIA QUERIES ---------------------------- */
 @media (max-width: 1500px) {}

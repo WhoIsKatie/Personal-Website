@@ -150,3 +150,42 @@ nightToggle.addEventListener('click', function () {
     }
     night = !night;
 });
+
+const slides = document.getElementsByClassName("screenshot");
+const dots = document.getElementsByClassName("dot");
+let slideIndex = 3;
+var t;
+showSlides();
+
+// Thumbnail image controls
+function currentSlide(n) {
+    slideIndex = n;
+    clearTimeout(t);
+    showSlides();
+}
+
+function showSlides() {
+    var currentSlide, currentDot;
+    for (let i = 0; i < slides.length; ++i) {
+        currentSlide = slides[i];
+        currentDot = dots[i];
+        currentSlide.classList.add("hide");
+        currentDot.classList.remove("activedot");
+    }
+
+    ++slideIndex;
+    if (slideIndex > slides.length)
+        slideIndex = 1;
+    (slides[slideIndex - 1]).classList.remove("hide");
+    (dots[slideIndex - 1]).className += " activedot";
+    t = setTimeout(showSlides, 10000);
+}
+
+function plusSlides(count) {
+    clearTimeout(t);
+    if (count <= -1)
+        slideIndex += count - 1;
+    if (slideIndex < 0)
+        slideIndex = 5;
+    showSlides();
+}
