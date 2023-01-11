@@ -92,6 +92,10 @@
     color: var(--primary);
 }
 
+#featured-project a {
+    color: var(--secondary-1);
+}
+
 #featured-container {
     display: flex;
     width: 20vw;
@@ -146,12 +150,9 @@
 }
 
 
-#featured-carousel a {
-    color: var(--raisin-black)
-}
-
 .prev,
 .next {
+    color: var(--raisin-black);
     cursor: pointer;
     position: absolute;
     top: 50%;
